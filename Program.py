@@ -51,7 +51,7 @@ def Produit_matrix(matriceA, matriceB):
 def ProjetDIT():
     st.title("Calcul de matrices")
     option = st.selectbox(
-        "Choisissez une option:", 
+        "Choisissez une option:",
         ("Calculer le transposé", "Calculer le produit de matrices")
     )
 
