@@ -45,8 +45,7 @@ def ProjetDIT():
         st.write("Matrice A")
         matriceA = saisir_matrix("Matrice A")
         st.write("Matrice B")
-        matriceB = saisir_matrix("Matrice B")
-        
+        matriceB = saisir_matrix("Matrice B")      
         if len(matriceA[0]) != len(matriceB):
             st.write("Le produit de matrices n'est pas possible.")
         else:
