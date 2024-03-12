@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 # Fonction saisie matrice
 def saisir_matrix(label):
     nbre_lignes = st.number_input(label + " - Nombre de lignes :", min_value=1, step=1, value=1, format="%d")
