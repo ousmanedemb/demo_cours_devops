@@ -3,8 +3,19 @@ import streamlit as st
 
 # Fonction saisie matrice
 def saisir_matrix(label):
-    nbre_lignes = st.number_input(label + " - Nombre de lignes :", min_value=1, step=1, value=1, format="%d")
-    nbre_colonnes = st.number_input(label + " - Nombre de colonnes :", min_value=1, step=1, value=1, format="%d")
+    nbre_lignes = st.number_input(
+        label + " - Nombre de lignes :",
+         min_value=1,
+          step=1, value=1,
+           format="%d"
+        )
+    nbre_colonnes = st.number_input(
+        label + " - Nombre de colonnes :",
+         min_value=1,
+          step=1,
+           value=1,
+            format="%d"
+        )
 
     matrices = []
     for i in range(nbre_lignes):
