@@ -22,8 +22,8 @@ def saisir_matrix(label):
         row = []
         for j in range(nbre_colonnes):
             val = st.number_input(
-                f"{label} - Valeur ({i}*{j}):", 
-                step=1, 
+                f"{label} - Valeur ({i}*{j}):",
+                step=1,
                 format="%d"
             )
             row.append(val)
@@ -51,13 +51,17 @@ def Produit_matrix(matriceA, matriceB):
 def ProjetDIT():
     st.title("Calcul de matrices")
     option = st.selectbox(
-    "Choisissez une option:", ("Calculer le transposé", "Calculer le produit de matrices")
+        "Choisissez une option:", 
+        ("Calculer le transposé", "Calculer le produit de matrices")
     )
 
     if option == "Calculer le transposé":
         st.subheader("Transposée d'une matrice")
         matrice = saisir_matrix("Matrice")
-        transpose = [[matrice[j][i] for j in range(len(matrice))] for i in range(len(matrice[0]))]
+        transpose = [
+            [matrice[j][i] for j in range(len(matrice))]
+            for i in range(len(matrice[0]))
+        ]
         st.write("Matrice d'entrée:")
         st.table(matrice)
         st.write("Transposée:")
