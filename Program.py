@@ -15,6 +15,7 @@ def saisir_matrix(label):
         matrices.append(row)
     return matrices
 
+
 # Fonction produit matrices, en paramètre 2 matrices A et B
 def Produit_matrix(matriceA, matriceB):
     if len(matriceA[0]) != len(matriceB):
@@ -26,6 +27,7 @@ def Produit_matrix(matriceA, matriceB):
                 for k in range(len(matriceB)):
                     matriceAB[i][j] += matriceA[i][k] * matriceB[k][j]
         return matriceAB
+
 
 # Fonction principal
 def ProjetDIT():
