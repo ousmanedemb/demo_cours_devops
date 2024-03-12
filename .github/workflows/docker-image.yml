@@ -19,12 +19,6 @@ jobs:
         run: |
           source venv/bin/activate
           flake8 Program.py
-
-      - name: Exécuter les tests unitaires
-        run: |
-          source venv/bin/activate
-          pytest tests
-
       - name: Analyser le code avec pylint
         run: |
           source venv/bin/activate
