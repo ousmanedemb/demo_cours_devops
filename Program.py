@@ -15,7 +15,7 @@ def saisir_matrix(label):
     return matrices
 
 # Fonction produit matrices, en paramètre 2 matrices A et B
-def produit_matrix(matriceA, matriceB):
+def Produit_matrix(matriceA, matriceB):
     if len(matriceA[0]) != len(matriceB):
         return None
     else:
@@ -27,7 +27,7 @@ def produit_matrix(matriceA, matriceB):
         return matriceAB
 
 # Fonction principal
-def projet_dit():
+def ProjetDIT():
     st.title("Calcul de matrices")
     option = st.selectbox("Choisissez une option:", ("Calculer le transposé", "Calculer le produit de matrices"))
 
@@ -49,10 +49,11 @@ def projet_dit():
         if len(matriceA[0]) != len(matriceB):
             st.write("Le produit de matrices n'est pas possible.")
         else:
-            matriceAB = produit_matrix(matriceA, matriceB)
+            matriceAB = Produit_matrix(matriceA, matriceB)
             st.write("Résultat du produit:")
             st.table(matriceAB)
 
+
 # Lancer le programme
 if __name__ == "__main__":
-    projet_dit()
+    ProjetDIT()
