@@ -8,7 +8,7 @@ def test_saisir_matrix():
 
     # Patching de la fonction input() pour simuler les entrées utilisateur
     with patch("builtins.input", side_effect=inputs):
-        matrices = Program.saisir_matrix("Test")
+        matrices = saisir_matrix("Test")
 
     # Vérifier si la matrice retournée est correcte
     assert matrices == [[1, 2, 3], [4, 5, 6]]
