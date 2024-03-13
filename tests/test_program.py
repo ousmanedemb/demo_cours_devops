@@ -1,5 +1,5 @@
 import pytest
-from ./Program import saisir_matrix
+from ..Program import saisir_matrix
 
 def test_saisir_matrix():
     # Simuler la saisie de l'utilisateur
