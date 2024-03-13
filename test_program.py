@@ -1,9 +1,8 @@
 import pytest
 from Program import saisir_matrix
-
 from unittest.mock import patch
 
-def saisir_matrix():
+def test_saisir_matrix():
     # Entrée simulée pour les tests
     inputs = ["2", "3", "1", "2", "3", "4", "5", "6"]
 
@@ -13,4 +12,3 @@ def saisir_matrix():
 
     # Vérifier si la matrice retournée est correcte
     assert matrices == [[1, 2, 3], [4, 5, 6]]
-
