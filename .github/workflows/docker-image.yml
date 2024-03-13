@@ -14,7 +14,7 @@ jobs:
         run: |
           python3 -m venv venv
           source venv/bin/activate
-          pip install flake8 pytest
+          pip install streamlit flake8 pytest
       - name: Analyser le code avec flake8
         run: |
           source venv/bin/activate
